@@ -1,0 +1,229 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.homeSkills {
+    background-color: white;
+    width: 40%;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.homeSkills>h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 4vmax;
+    font-size: 4vmax;
+}
+
+.homeCubeSkills {
+    width: 200px;
+    height: 200px;
+    animation: cubeRotation 20s linear infinite alternate;
+    transform-style: preserve-3d;
+}
+
+.homeCubeSkillsFaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.9;
+}
+
+.homeCubeSkillsFaces>img {
+    width: inherit;
+    height: inherit;
+}
+
+.homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 100px);
+}
+
+.homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 150px);
+}
+
+.homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 150px);
+}
+
+.cubeShadow {
+    width: 300px;
+    height: 40px;
+    /* background-color: rgba(255, 255, 255, 0.171); */
+    /* background-color: orange; */
+    border-radius: 50%;
+    animation: cubeShadow 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+}
+
+.homecontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.homecontent>.headname>h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--blue);
+}
+
+.homecontent>.headname>h1>span {
+    color: var(--orange);
+}
+
+.btns {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    background-color: var(--blue);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: .5s all;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btns:hover {
+    scale: 1.07;
+    background-color: white;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+@media screen and (max-width:1200px) {
+    .home {
+        width: 100vw;
+        flex-direction: column;
+    }
+    .homeSkills {
+        width: 100%;
+    }
+    .homecontent {
+        display: flex;
+        width: 80%;
+        overflow-x: hidden;
+        margin: auto;
+    }
+    .homeCubeSkills {
+        width: 150px;
+        height: 150px;
+    }
+    .homeCubeSkillsFace1 {
+        transform: translate3d(0, 0, 100px);
+    }
+    .homeCubeSkillsFace2 {
+        transform: rotateY(180deg) translate3d(0, 0, 100px);
+    }
+    .homeCubeSkillsFace3 {
+        transform: rotateY(-90deg) translate3d(0, 0, 100px);
+    }
+    .homeCubeSkillsFace4 {
+        transform: rotateY(90deg) translate3d(0, 0, 100px);
+    }
+    .homeCubeSkillsFace5 {
+        transform: rotateX(90deg) translate3d(0, 0, 100px);
+    }
+    .homeCubeSkillsFace6 {
+        transform: rotateX(-90deg) translate3d(0, 0, 100px);
+    }
+    .homecontent>.headname>h1 {
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: var(--blue);
+    }
+    .homecontent>.headname>h1>span {
+        color: var(--orange);
+    }
+    .headpara {
+        font-size: .8rem;
+        height: 199px;
+    }
+    .butns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btns {
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 2px solid var(--orange);
+        background-color: var(--blue);
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        transition: .5s;
+    }
+}
+
+@keyframes cubeRotation {
+    to {
+        transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+    }
+}
+
+@keyframes cubeShadow {
+    to {
+        transform: scale(1.2) translateY(-10px);
+    }
+}
+
+@keyframes homeskillsBoxAnimationOn {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 40px;
+    }
+}
+
+@keyframes homeskillsBoxAnimationOff {
+    from {
+        right: 40px;
+    }
+    to {
+        right: -300px;
+    }
+}
