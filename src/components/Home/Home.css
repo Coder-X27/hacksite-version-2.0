@@ -7,7 +7,6 @@
 }
 
 .homeSkills {
-    background-color: white;
     width: 40%;
     min-height: 100vh;
     position: relative;
@@ -24,7 +23,6 @@
 .homeSkills>h3 {
     text-align: center;
     color: white;
-    margin-bottom: 4vmax;
     font-size: 4vmax;
 }
 

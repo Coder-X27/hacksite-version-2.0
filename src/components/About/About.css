@@ -1,0 +1,95 @@
+.bg-about {
+    width: 100vw;
+    min-height: 100vh;
+    background: url(./servBg.jpg) repeat center center/cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.aboutcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80vh;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.807);
+    right: 0;
+    top: 65px;
+    position: absolute;
+    color: var(--blue);
+}
+
+.cardLetters {
+    font-size: 3rem;
+    margin: auto;
+}
+
+.cardLetters:hover {
+    cursor: pointer;
+    transition: all .3s;
+    transform: scale(1.5);
+}
+
+.aboutus {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1rem;
+    width: 21%;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    transition: all .5s;
+    animation: visible 2s forwards;
+}
+
+.about:hover {
+    background-color: rgba(255, 255, 255, 0.797);
+    transform: scale(1.01);
+}
+
+.aboutImg {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.about-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about-role {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.linkbtn {
+    padding: .5rem 1.5rem;
+    border: 2px solid var(--blue);
+    color: white;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.about:hover .about-role,
+.about:hover .about-name,
+.about:hover .linkbtn {
+    color: var(--orange);
+}

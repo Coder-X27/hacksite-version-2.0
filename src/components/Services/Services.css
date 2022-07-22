@@ -1,0 +1,141 @@
+.servicecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.servicecontainer::before {
+    background: url('./servBg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.cardleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    min-height: 100%;
+    /* background-color: white; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0% 20% 20% 0%;
+}
+
+.mb5 {
+    margin: 14rem 0px 0rem -2rem;
+    /* position: fixed; */
+}
+
+.Heading {
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--blue);
+}
+
+.Heading span {
+    color: var(--orange);
+}
+
+.cardHeading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .06rem;
+    transition: 1s all;
+    color: var(--blue);
+}
+
+.projectCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20% 0% 0% 20%;
+}
+
+.cardSubtitle {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.cardImg {
+    width: 200px;
+}
+
+.cardright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* {
+    /* <div className="maincard">
+          <div className="projectCard">
+            <img
+              className="cardImg"
+              src="./images/organizationneed.gif"
+              alt=""
+            />
+            <h1 className="cardHeading">Organization Need</h1>
+            <h2 className="cardSubtitle">
+             <b> Stores Data</b>:- Our website captures monthly production of the
+              Chemical and Petrochemical manufacturing units with their
+              respective user name id and password and allow authorized persons
+              to systematically revise their respective statistical information. <br />
+
+              <b> Checks and Validations</b>:- Our website provides a prominent relief
+              from the human errors which arises unwillingly or subconsciously.
+            </h2>
+          </div>
+        </div>
+        <div className="projectCard">
+          <img
+            className="cardImg"
+            src="./images/anima2.gif"
+            alt=""
+          />
+          <h1 className="cardHeading">admin interface</h1>
+          <h2 className="cardSubtitle">This portal smoothly provides prompt overview of registered industries to the admin. It entirely covers the requirements of admin about the recorded data.</h2>
+        </div>
+        <div className="projectCard">
+          <img
+            className="cardImg"
+            src="./images/anima3.gif"
+            alt=""
+          />
+          <h1 className="cardHeading">apt visual aids</h1>
+          <h2 className="cardSubtitle">All visual aids including graphs, graphics, charts, etc which plays a great role on any platform to enhance the understanding and for multiplying the experience even better are present everywhere on our website.</h2>
+        </div>
+        <div className="projectCard">
+          <img
+            className="cardImg"
+            src="./images/anima4.gif"
+            alt=""
+          />
+          <h1 className="cardHeading">Inhance business opportunities</h1>
+          <h2 className="cardSubtitle">This platform provides universal business opportunities by allowing them to deal with anyone present on our website after analyzing their datas and Petrochemicals present.</h2>
+        </div>
+      </div> */
